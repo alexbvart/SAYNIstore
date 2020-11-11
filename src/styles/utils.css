@@ -1,0 +1,148 @@
+
+/* utils */
+.generic-list-horizontal{
+    display: flex;
+    align-items: center;
+
+    width: auto;
+    height: auto;
+
+    /* margin: 12px 0; */
+}
+
+.generic-list-horizontal > li{
+    padding-right: 12px;
+}
+.generic-list-horizontal li a img:hover{
+    width: 48px;
+    transition: all 20s ease-out;
+
+}
+
+
+
+/* Poscicionamiento de centrado */
+.center{
+    display:flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.icons{
+    margin-top: 72px;
+}
+
+
+
+/* titulos de la pagina */
+.title-page{
+    font-style: normal;
+    font-weight: 500;
+    font-size: var(--titles);
+    line-height: 1.8rem;
+    color: var(--off-black);
+    padding:  0 0 12px 0;
+}
+
+.title-page--right{
+    text-align: right;
+}
+
+
+/* titulos de una section */
+.title-section{
+    font-style: normal;
+    font-weight: 700;
+    font-size: var(--titles-section);
+    line-height: 1.8rem;
+    color: var(--gray);
+    margin: 0 0 12px 0;
+    /* padding: 48px 0; */
+}
+
+
+
+/* text */
+
+.call-to-action-text{
+    color: var(--action);
+}
+
+
+
+@media (min-width: 600px) { /* Mayor a 600 */
+    .main{
+        width: 90%;
+        margin: auto;
+    }
+    .header{
+        padding: 40px 5vw;
+/*         background-color: rebeccapurple; */
+    }
+
+}
+
+@media (max-width: 600px) { /* Menor a 600 */
+    .main{
+        width: calc(100% - 48px);
+        margin: auto;
+    }
+    .header{
+        padding: 40px 24px;
+   
+    }
+
+}
+
+
+/* botones cuadraditos */
+
+.buttons-36x36{
+    width: 48px;
+    height: 48px;
+
+    color: var(--just-black);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: var(--just-white);
+    border-radius: 12px;
+
+    font-weight: 500;
+    font-size: 2rem;
+    
+    border: 1px solid #ACACAC;
+    box-sizing: border-box;
+    margin: 0 0 8px 0;
+}
+
+.buttons-36x36:focus{
+    color: var(--just-white);
+    background: var(--background-black);
+    border-style: none;
+}
+
+/* .buttons-36x36:active{
+    width: 36px;
+    height: 36px;
+
+    color: var(--just-white);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: var(--background-black);
+    border-radius: 12px;
+    
+    border: 1px solid #ACACAC;
+    box-sizing: border-box;
+
+} */
+

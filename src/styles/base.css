@@ -1,0 +1,111 @@
+/* 
+Agregando estilos:
+
+1. Posicionamiento            --> static, absolute, relative, fixedos
+2. Modelo de caja             --> margin, border, padding, content
+3. Tipografía                 --> tipos, tamaños de fuente, etc
+4. Visuales                   --> box-shadow, border-radius, gradient, etc
+5. Otros                      --> reglas CSS y más
+*/
+
+
+/* archivo base */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+
+    /* Colores generales  */
+    --background-black: #12121A;
+
+    --off-black: #3A2F37
+    --just-black: #000000;
+    --off-white-2: #DBDBDB;
+    --off-white: #F6F7FC;
+    --just-white: #fff;
+
+    --gray: #ACACAC;
+
+    --action: rgb(255, 192, 203);
+
+
+
+    /* Fuentes y tamaños */
+    --font-poppins:'Poppins', sans-serif;
+
+    --all-18: 1.8rem;
+    --titles: 3.6rem;
+    --titles-section: 1.2rem;
+    --paragraph: 1.4rem;
+
+
+
+
+   /*  Colores en los item de categoria */
+    --category-1:#7BF6FF;
+    --category-2: #E5C5F6;
+    --category-3: #FFC5C5;
+    --category-4: #F9F9F9;
+    --category-5: #FDDB26;
+    --category-6: #D2FAFA;
+    --category-7: #FAE6DB;
+    --category-width: 120px;
+    --category-item: 4;
+
+    /*  Colores auxiliares
+     */
+    --aux-1:#E1ADFF;
+    --aux-1-1:#F9B0F9;
+    --aux-2: #FFD83F;
+    --aux-2-1: #D6A131;
+    --aux-3: #90D5FE;
+    --aux-3-1: #28AFE7;
+    --aux-3-2: #9DDBF8;
+    --aux-4: #7DF39E;
+    --aux-4-1: #CEFD95;
+
+
+
+
+}
+
+html{
+    background: var(--just-white);
+    font-size: 62.5%;
+    font-family: var(--font-poppins);
+}
+
+body{
+    font-style: normal;
+    font-weight: 500;
+    font-size: var(--all-18);
+    line-height: 2.4rem;
+    color: var(--off-black);
+}
+
+a{
+    text-decoration: none;
+    color: var(--just-black);
+}
+
+ul{
+    list-style:none;
+}
+
+.paragraph { font-size: var(--paragraph);
+}
+
+p{
+    font-style: normal;
+    font-weight: 00;
+    font-size: var(--paragraph);
+    line-height: 1.8rem;
+    color: var(--off-black);
+    padding:  12px 0 12px 0;
+}
+
+input, input:focus, input:active{border-style: none;     outline: none;}

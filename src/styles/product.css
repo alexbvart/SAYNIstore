@@ -1,0 +1,91 @@
+.header--product{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+
+
+/* seccion de las imagenes + tallas */
+
+.images{
+    --images-height: 320px;
+    --quantity-size:3;
+    --size-height: calc(var(--quantity-size)*(36px + 8px) -8px);
+    
+    position: relative;
+}
+.images__list li{
+  /*   width: 100%; */
+    height: var(--images-height);
+}
+
+.images__list li img{
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+}
+
+.images__size{
+    position: absolute;
+    top: calc(50% - var(--size-height)*0.5);
+    right: 0;
+}
+
+
+
+/* Seccion de la descripcion de la prenda */
+.description{
+    display: flex;
+    align-items: center;
+    margin: 24px 0 24px 0;
+}
+
+.description__text{
+/*     background: red; */
+}
+
+.available-colors{
+    width: 20px;
+    height: 20px;
+/*     background-color: lawngreen; */
+    border-radius: 50%;
+}
+
+.available-colors:nth-child(1) {
+    background-color: var(--category-1);
+}
+.available-colors:nth-child(2) {
+    background-color: var(--category-2);
+}
+.available-colors:nth-child(3) {
+    background-color: var(--category-3);
+}
+.description__quantity{
+    width: 80px;
+    height: 120px;
+    border-radius: 12px;
+    border: 1px solid #ACACAC;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.description__quantity > *{
+    width: 80px;
+    height: 40px;
+}
+
+.description__button{
+    width: 100%;
+    height: 36px;
+
+    color: var(--just-white);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #000;
+    border-radius: 12px;
+}
