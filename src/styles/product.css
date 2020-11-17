@@ -1,11 +1,3 @@
-.header--product{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-}
-
-
 
 
 /* seccion de las imagenes + tallas */
@@ -77,8 +69,10 @@
 }
 
 .description__button{
-    width: 100%;
+    width: auto;
     height: 36px;
+
+    padding: 4px 12px;
 
     color: var(--just-white);
 

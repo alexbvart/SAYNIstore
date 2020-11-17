@@ -1,8 +1,34 @@
 .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
     width: 100%;
-    height: 100%;
+    height: 64px;
+    background-color: var(--just-white);
+
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    margin-bottom: 24px;
+
+}
+.header__nav{
+    display: flex;
+}
+.header__nav img{
+    margin-left: 4px;
 }
 
+.profile__name{
+    font-style: normal;
+    font-weight: 500;
+    font-size: var(--all-18);
+    line-height: 2.4rem;
+    color: var(--off-black);
+}
+
+/* main section */
 .main__section{
     background-color: var(--just-white);
     padding: 12px 0;

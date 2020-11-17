@@ -29,7 +29,13 @@
     align-items: center;
 }
 
-
+/* imagen circular */
+.circular-image{
+    --size: 32px;
+    width: var(--size);
+    height: var(--size);
+    border-radius: calc(var(--size)*0.5);
+}
 
 
 .icons{
@@ -46,6 +52,7 @@
     line-height: 1.8rem;
     color: var(--off-black);
     padding:  0 0 12px 0;
+    
 }
 
 .title-page--right{
@@ -80,7 +87,7 @@
         margin: auto;
     }
     .header{
-        padding: 40px 5vw;
+        padding: 0 5vw;
 /*         background-color: rebeccapurple; */
     }
 
@@ -92,7 +99,7 @@
         margin: auto;
     }
     .header{
-        padding: 40px 24px;
+        padding: 0 24px;
    
     }
 
@@ -123,6 +130,7 @@
 }
 
 .buttons-36x36:focus{
+    fill: var(--just-white);
     color: var(--just-white);
     background: var(--background-black);
     border-style: none;
