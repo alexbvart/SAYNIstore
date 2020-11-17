@@ -79,14 +79,6 @@ auth.onAuthStateChanged(user => {
     if (user) {
         console.log('sign in ... dentro');
         loginCheck(user);
-        headerNav.innerHTML=
-        `
-        <img 
-                class="circular-image"
-                id="avatarImg"
-                src="https://lh3.googleusercontent.com/a-/AOh14Gj7w-zVx8L6cQB3L6j8Rpe7YkyZOaI-RcruLNGi=s96-c" 
-                alt="foto de perfil">
-        `;
 /*         btnOpenPopup.innerHTML="Ingresa" */
 
     } else {

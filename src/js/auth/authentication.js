@@ -60,7 +60,7 @@ swfacebook.addEventListener('click',()=>{
 
 
 
-auth.onAuthStateChanged(user => {
+/* auth.onAuthStateChanged(user => {
 
     
     if (user) {
@@ -74,11 +74,11 @@ auth.onAuthStateChanged(user => {
                 src="https://lh3.googleusercontent.com/a-/AOh14Gj7w-zVx8L6cQB3L6j8Rpe7YkyZOaI-RcruLNGi=s96-c" 
                 alt="foto de perfil">
         `;
-/*         btnOpenPopup.innerHTML="Ingresa" */
+
 
     } else {
         console.log('sign out ... fuera');   
         
         loginCheck(user);
     }
-})
+}) */
