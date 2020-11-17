@@ -128,7 +128,10 @@
     box-sizing: border-box;
     margin: 0 0 8px 0;
 }
-
+.buttons-36x36:hover{
+    border-color:  var(--background-black);
+    border: 1px solid;
+}
 .buttons-36x36:focus{
     fill: var(--just-white);
     color: var(--just-white);

@@ -15,9 +15,10 @@
 }
 .header__nav{
     display: flex;
+    align-items: center;
 }
 .header__nav img{
-    margin-left: 4px;
+    margin-left: 12px;
 }
 
 .profile__name{
