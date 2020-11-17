@@ -19,24 +19,21 @@
 <body>
     <header class="header">
         <a href="#"  class="logo">SAYNI</a>
-        <nav class="header__nav">
+        <nav class="header__nav" id="header__nav">
             <a 
                 href="#" 
                 class="description__button logged-out"
                 style="display: none;"
                 id="btn-open-popup"
             > Ingresar </a> 
-            <a 
-                href="#" 
-                class="logged-in"
-                style="display: none;"
-                id="btn-logout"
-            >    hhhhhhhhhhhhh</a> 
+
             <img 
                 class="circular-image logged-in"
                 id="avatarImg"
-                src="https://lh3.googleusercontent.com/a-/AOh14Gj7w-zVx8L6cQB3L6j8Rpe7YkyZOaI-RcruLNGi=s96-c" 
-                alt="foto de perfil">
+                src="https://lh3.googleusercontent.com/a-/AOh14Gj7w-zVx8L6cQB3L6j8Rpe7YkyZOaI-RcruLNGi=s96-c"
+            >            
+            <!--     src="https://lh3.googleusercontent.com/a-/AOh14Gj7w-zVx8L6cQB3L6j8Rpe7YkyZOaI-RcruLNGi=s96-c" 
+                alt="foto de perfil"-->
         </nav>
     </header>
     <main class="main">
@@ -117,6 +114,31 @@
             </li>
         </ul>
     </div>
+
+    <ul class="popup-logout"
+        id="popup-logout" 
+        >
+        <li class="popup-logout__info">
+            <img 
+                class="circular-image "
+                id="avatarImg"
+                src="https://lh3.googleusercontent.com/a-/AOh14Gj7w-zVx8L6cQB3L6j8Rpe7YkyZOaI-RcruLNGi=s96-c" 
+                alt="foto de perfil">
+            <p>Alexander Briones</p>
+        </li>
+        <li class="popup-logout__info">
+            <a 
+                href="#" 
+                id="btn-close-sesion"
+                > Salir </a> 
+        </li>
+    </ul>
+
+
+
+
+
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
     <script src="src/js/popup.js"></script>
 <!--     <script src="src/js/general.js"></script> -->

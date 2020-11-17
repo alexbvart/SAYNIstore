@@ -13,4 +13,13 @@ btnClosePopup.addEventListener('click',function(){
     popup.classList.remove('active');
 });
 
-console.log("Holas");
+console.log("popup");
+
+
+var avatarImg = document.getElementById('avatarImg'),
+    popupLogout = document.getElementById('popup-logout');
+
+avatarImg.addEventListener('click',function(){
+    popupLogout.classList.toggle('active');
+    console.log("presionar la foto");
+});

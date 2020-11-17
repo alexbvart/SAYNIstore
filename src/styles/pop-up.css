@@ -30,11 +30,13 @@
     
 
 }
+
 .poppup.active{
     opacity: 1;
 /*     transform: scale(1); */
 }
 
+.popup-logout>*,
 .poppup>.poppup__item,.poppup__item--saludo{
     padding: 8px 24px;
 }
@@ -59,7 +61,6 @@
     color: var(--off-black-color);
 }
 .btn-close-popup{
-    
     position: absolute;
     top: 24px;
     right: 24px;
@@ -73,8 +74,46 @@
 .poppup__item span{
     margin-left: 12px;
 }
-.profile__image{
-    margin-right: 16px;
+
+
+
+/* popup logout */
+.popup-logout{
+    
+    width: 220px;
+    min-width: 145px;
+    height: 116px;
+    
+    margin:auto;
+    position: absolute;
+
+    top: 64px;
+    right: 24px;
+
+    border-radius: 12px;
+    transition: .2s ease-in all;
+    opacity: 0; 
+    visibility: hidden;
+    
+    background-color: var(--just-white);
+    border: solid 1px;
+    border-color: var(--gray);
+    border-radius: 4px;
+    box-shadow: 0 2px 8px 0 #c9c9c9;
+}
+
+.popup-logout.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup-logout__info img{
+    margin-right: 12px;
+}   
+.popup-logout__info{   
+    display: flex;
+    align-items: center;
+
 }
 
 @media (min-width: 600px) { /* Mayor a 600 */

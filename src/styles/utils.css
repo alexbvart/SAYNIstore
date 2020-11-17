@@ -127,6 +127,9 @@
     border: 1px solid #ACACAC;
     box-sizing: border-box;
     margin: 0 0 8px 0;
+    z-index: 999;
+
+    cursor: pointer;
 }
 .buttons-36x36:hover{
     border-color:  var(--background-black);

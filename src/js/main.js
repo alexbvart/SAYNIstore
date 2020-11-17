@@ -1,4 +1,7 @@
-/* console.log("main"); */
+var   overley = document.getElementById('overley'),
+        popup = document.getElementById('popup'),
+        popupLogout = document.getElementById('popup-logout');
+
 /* nav__Header */
 
 
@@ -62,6 +65,12 @@ const setupCategories = data =>{
 /* Cargar foto de perfil y nombre de usuario */
 
 
+/* popup para cerrar sesion */
+var popupLogout = document.getElementById('popup-logout');
+
+
+
+
 
 
 /* eventos */
@@ -79,11 +88,16 @@ auth.onAuthStateChanged(user => {
     if (user) {
         console.log('sign in ... dentro');
         loginCheck(user);
-/*         btnOpenPopup.innerHTML="Ingresa" */
+
+        /* cerrar las ventanas modales */
+        popupLogout.classList.remove('active'); 
+        overley.classList.remove('active')
+        popup.classList.remove('active')
+
+
 
     } else {
         console.log('sign out ... fuera');   
-        
         loginCheck(user);
     }
 })
