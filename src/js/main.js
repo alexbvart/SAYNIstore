@@ -1,4 +1,28 @@
-console.log("main");
+/* console.log("main"); */
+/* nav__Header */
+
+
+const  headerNav= document.querySelector('.header__nav');
+
+
+
+/* Links */
+const  outLinks= document.querySelectorAll('.logged-out');
+const  inLinks = document.querySelectorAll('.logged-in');
+console.log(outLinks);
+console.log(inLinks);
+
+const loginCheck = user => {
+    if (user) {
+        inLinks.forEach(link=> link.style.display='block');
+        outLinks.forEach(link=> link.style.display='none');
+    } else {
+        inLinks.forEach(link=> link.style.display='none');
+        outLinks.forEach(link=> link.style.display='block');
+    }
+}
+
+
 
 
 
@@ -35,6 +59,10 @@ const setupCategories = data =>{
 }
 
 
+/* Cargar foto de perfil y nombre de usuario */
+
+
+
 
 /* eventos */
 /* Mostrar los datos solo si el usuario esta logeado */
@@ -49,9 +77,26 @@ auth.onAuthStateChanged(user => {
     })
     
     if (user) {
-        console.log('sign in');
+        console.log('sign in ... dentro');
+        loginCheck(user);
+        headerNav.innerHTML=
+        `
+        <img 
+                class="circular-image"
+                id="avatarImg"
+                src="https://lh3.googleusercontent.com/a-/AOh14Gj7w-zVx8L6cQB3L6j8Rpe7YkyZOaI-RcruLNGi=s96-c" 
+                alt="foto de perfil">
+        `;
+/*         btnOpenPopup.innerHTML="Ingresa" */
 
     } else {
-        console.log('sign out');   
+        console.log('sign out ... fuera');   
+        
+        loginCheck(user);
     }
 })
+
+
+
+/* PopUp */
+/* const btnOpenPopup = document.getElementById('btn-open-popup'); */

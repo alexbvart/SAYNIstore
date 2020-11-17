@@ -139,6 +139,14 @@
     border-style: none;
 }
 
+/* Desactivar algunos elementos */
+
+.none-visivility{
+    display: none;
+    background: red;
+}
+
+
 /* .buttons-36x36:active{
     width: 36px;
     height: 36px;
