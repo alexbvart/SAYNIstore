@@ -109,10 +109,12 @@
 
 .popup-logout__info img{
     margin-right: 12px;
-}   
+}  
+.popup-logout__info a, 
 .popup-logout__info{   
     display: flex;
     align-items: center;
+    width: 100%;
 
 }
 

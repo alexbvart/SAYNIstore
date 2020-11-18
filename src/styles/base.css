@@ -106,7 +106,7 @@ ul{
 
 p{
     font-style: normal;
-    font-weight: 00;
+    font-weight: 500;
     font-size: var(--paragraph);
     line-height: 1.8rem;
     color: var(--off-black);
@@ -114,3 +114,4 @@ p{
 }
 
 input, input:focus, input:active{border-style: none;     outline: none;}
+

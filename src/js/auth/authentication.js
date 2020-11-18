@@ -1,20 +1,21 @@
-console.log("authentication");
-/* class Authentication{ */
+
 /* headerNav */
-var   overley = document.getElementById('overley'),
+var     overley = document.getElementById('overley'),
         popup = document.getElementById('popup'),
         popupLogout = document.getElementById('popup-logout');
 
-var header__nav =document.getElementById('header__nav');
-
-
-var avatarImg = document.getElementById('avatarImg');
-var displayName = document.getElementById('displayName');
+/* Elementos a cargar imagenes y nombres */
+var avatarImg = document.getElementById('avatarImg'),
+    displayName = document.getElementById('displayName'),
+    avatarImgPop = document.getElementById('avatarImg-pop'),
+    displayNamePop = document.getElementById('displayName-pop');
     
-const btnCloseSesion = document.getElementById('btn-close-sesion');
 
-const swgoogle = document.getElementById('startWithGoogle'),
-    swfacebook = document.getElementById('startWithFacebook');
+/* sesiones */
+const   btnCloseSesion = document.getElementById('btn-close-sesion');
+
+const   swgoogle = document.getElementById('startWithGoogle'),
+        swfacebook = document.getElementById('startWithFacebook');
 
 
 /* Log Out */
@@ -37,16 +38,14 @@ swgoogle.addEventListener('click',()=>{
     const provider = new firebase.auth.GoogleAuthProvider();
     auth.signInWithPopup(provider)
         .then(result => {
-            /* header__nav.innerHTML=`
-            <img 
-                class="circular-image logged-in"
-                id="avatarImg "
-                src="${result.user.photoURL}" 
-                alt="${result.user.displayName}" >
-            `; */
-/*             avatarImg.attr('src',result.user.photoURL)
-            avatarImg.attr('alt',result.user.displayName)
-            displayName.innerHTML=" jose ${result.user.displayName}" */
+
+            avatarImg.alt= result.user.displayName
+            avatarImg.src= result.user.photoURL
+            displayName.innerHTML=`${result.user.displayName}`
+
+            avatarImgPop.alt= result.user.displayName
+            avatarImgPop.src= result.user.photoURL 
+            displayNamePop.innerHTML=`${result.user.displayName}` 
         })
         .catch(error=>{
             console.error(error);
@@ -61,9 +60,13 @@ swfacebook.addEventListener('click',()=>{
 
     auth.signInWithPopup(provider)
     .then(result => {
-/*         avatarImg.attr('src',result.user.photoURL)
-        avatarImg.attr('alt',result.user.displayName)
-        displayName.innerHTML="{result.user.displayName}" */
+        avatarImg.alt= result.user.displayName
+        avatarImg.src= result.user.photoURL
+        displayName.innerHTML=`${result.user.displayName}` 
+
+        avatarImgPop.alt= result.user.displayName
+        avatarImgPop.src= result.user.photoURL
+        displayNamePop.innerHTML=`${result.user.displayName}` 
     })
     .catch(error=>{
         console.error(error);
